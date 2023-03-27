@@ -45,6 +45,8 @@ for (let i = 0; i < 5; i++) {
 
 
 //  ESERCIZIO 4 (suggerimento: ci sono 8 errori)
+//! Funzione che inserisce in array tutti i numeri pari di un altro array
+//Ho corretto vari errori typo, ho tirato fuori dal ciclo for il return, ho pushato i numbers[i] e non gli indici
  function displayEvenNumbers() {
      let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
      let evenNumbers = [];
