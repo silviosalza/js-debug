@@ -11,37 +11,50 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
+//! Questo codice è un contatore, e stampa tutti i numeri compresi tra 5 e infinito
+// Per renderlo quantomento funzionante bisogna levare cambiare la condizione di i>5 in i<5
+
+for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
 
-// ESERCIZIO 2
-function addIfEven(num) {
-    if (num % 2 = 0) {
-        return num + 5;
-    }
-    return num;
-}
+//   ESERCIZIO 2
+//! Questa funziona somma 5 ad un numero pari.
+// Per funzionare bisogna cambiare = in identità ===, inserisco num+5 in una variabile total che poi andrò a ritornare. Invoco la funzione esternamente per testarla
+  function addIfEven(num) {
+    
+      if (num % 2 === 0) {
+          total = num + 5;
+      }
+      console.log(total);
+      return total;
+  }
+  addIfEven(2)
 
 
 // ESERCIZIO 3
-function loopToFive() {
-    for (let i = 0, i < 5, i++) {
-        console.log(i);
-    }
-}
+//! Funzione che stampa un contatore da 0 a 4
+// Per farla funzionare correggo typo error della condizione ciclo for (;), e la invoco
+ function loopToFive() {
+     for (let i = 0; i <= 5; i++) {
+         console.log(i);
+     }
+ }
+ loopToFive()
 
 
-// ESERCIZIO 4 (suggerimento: ci sono 8 errori)
-function displayEvenNumbers() {
-    let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-    let evenNumbers = [];
-    for (let i = 0; i < numbers.length - 1; i++;) {
-        if (numbers % 2 = 0); {
-            evenNumbers.push(i);
-        }
-        return evenNumbers;
-    }
-}
-displayEvenNumbers(); // [2,4,6,8]
+//  ESERCIZIO 4 (suggerimento: ci sono 8 errori)
+ function displayEvenNumbers() {
+     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+     let evenNumbers = [];
+     for (let i = 0; i < numbers.length; i++) {
+         if (numbers[i] % 2 === 0){
+             evenNumbers.push(numbers[i]);
+         }
+     }
+    console.log(evenNumbers);
+    return evenNumbers;
+ }
+ displayEvenNumbers(); // [2,4,6,8]
+ 
